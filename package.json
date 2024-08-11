@@ -1,13 +1,31 @@
 {
-  "name": "houston",
-  "version": "0.0.1",
-  "description": "",
+  "name": "@houston/react",
+  "version": "0.1.0",
+  "description": "Houston Pro React Component Library",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
     "build": "tsc"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:castrogusttavo/houston.git"
+  },
+  "bugs": {
+    "url": "https://github.com/castrogusttavo/houston.git/issues"
+  },
+  "keywords": [
+    "icons",
+    "react-icons",
+    "ui-components",
+    "design-system",
+    "vector-icons",
+    "react-component-library",
+    "web-icons",
+    "scalable-icons",
+    "customizable-icons",
+    "icon-library"
+  ],
   "author": "castrogusttavo",
   "dependencies": {
     "react": "^18.3.1"
@@ -15,5 +33,6 @@
   "devDependencies": {
     "@types/react": "^18.3.3",
     "typescript": "^5.5.4"
-  }
+  },
+  "license": "CC0-1.0"
 }

@@ -5,8 +5,7 @@ interface IconProps {
   iconSize?: number;
   fillType?: 'stroke' | 'solid' | 'bulk' | 'duotone';
   cornerStyle?: 'sharp' | 'rounded' | 'standard';
-  strokeColor?: string;
-  fillColor?: string;
+  color?: string;
 }
 
 export function Icon({
@@ -14,8 +13,7 @@ export function Icon({
   iconSize = 24,
   fillType = 'stroke',
   cornerStyle = 'standard',
-  strokeColor = 'currentColor',
-  fillColor = 'currentColor',
+  color = 'currentColor'
 }: IconProps) {
   if (fillType === 'duotone') {
     cornerStyle = 'rounded';
@@ -33,10 +31,7 @@ export function Icon({
       alt={`${iconName} icon`}
       width={iconSize}
       height={iconSize}
-      style={{
-        stroke: strokeColor,
-        fill: fillColor
-      }}
+      style={{ color }}
     />
   );
 }
