@@ -1,11 +1,11 @@
 {
-  "name": "@houston/react",
+  "name": "@houstonicons/react",
   "version": "0.1.0",
   "description": "Houston Pro React Component Library",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
-    "build": "tsc"
+    "build": "tsup src/index.ts --format esm,cjs --dts --external react"
   },
   "repository": {
     "type": "git",
@@ -32,7 +32,9 @@
   },
   "devDependencies": {
     "@types/react": "^18.3.3",
-    "typescript": "^5.5.4"
+    "typescript": "^5.5.4",
+    "tsup": "^8.1.0",
+    "vite": "^5.3.4"
   },
   "license": "CC0-1.0"
 }
