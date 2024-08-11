@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com:castrogusttavo/houston.git"
+    "url": "git+ssh://git@github.com/castrogusttavo/houston.git"
   },
   "bugs": {
     "url": "https://github.com/castrogusttavo/houston.git/issues"
@@ -36,5 +36,12 @@
     "tsup": "^8.1.0",
     "vite": "^5.3.4"
   },
+  "workspaces": [
+    "packages/*"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "packageManager": "npm@20.0.0",
   "license": "CC0-1.0"
 }
