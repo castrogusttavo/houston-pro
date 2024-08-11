@@ -1,5 +1,3 @@
-import { iconNames } from './iconNames';
-
 interface IconProps {
   iconName: string;
   iconSize?: number;
