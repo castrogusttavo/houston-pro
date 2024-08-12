@@ -3997,13 +3997,14 @@ function Icon({
   }
   const iconUrl = `https://cdn.hugeicons.com/icons/${validatedIconName}-${fillType}-${cornerStyle}.svg`;
   return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
-    "img",
+    "svg",
     {
-      src: iconUrl,
-      alt: `${validatedIconName} icon`,
+      xmlns: "http://www.w3.org/2000/svg",
       width: iconSize,
       height: iconSize,
-      style: { color }
+      "data-src": iconUrl,
+      color,
+      role: "img"
     }
   );
 }
