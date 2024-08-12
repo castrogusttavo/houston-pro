@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { IconName } from './iconsNames';
 
 export interface IconProps {
-  iconName: IconName;
+  iconName: string;
   iconSize?: number;
   fillType?: 'stroke' | 'solid' | 'bulk' | 'duotone';
   cornerStyle?: 'sharp' | 'rounded' | 'standard';
