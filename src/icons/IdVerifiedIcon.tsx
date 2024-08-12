@@ -1,6 +1,9 @@
 import React from 'react'
 import { Icon, IconProps } from '../Icon'
 
-export function IdVerifiedIcon({ iconName = "id-verified", ...props }: IconProps) {
+export function IdVerifiedIcon({
+  iconName = 'id-verified',
+  ...props
+}: IconProps) {
   return <Icon {...props} iconName={iconName} />
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Icon, IconProps } from '../Icon'
 
-export function Mouse16Icon({ iconName = "mouse16", ...props }: IconProps) {
+export function Mouse16Icon({ iconName = 'mouse16', ...props }: IconProps) {
   return <Icon {...props} iconName={iconName} />
 }

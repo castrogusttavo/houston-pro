@@ -1,6 +1,9 @@
 import React from 'react'
 import { Icon, IconProps } from '../Icon'
 
-export function FileShredderIcon({ iconName = "file-shredder", ...props }: IconProps) {
+export function FileShredderIcon({
+  iconName = 'file-shredder',
+  ...props
+}: IconProps) {
   return <Icon {...props} iconName={iconName} />
 }

@@ -1,6 +1,9 @@
 import React from 'react'
 import { Icon, IconProps } from '../Icon'
 
-export function MobileNavigator01Icon({ iconName = "mobile-navigator01", ...props }: IconProps) {
+export function MobileNavigator01Icon({
+  iconName = 'mobile-navigator01',
+  ...props
+}: IconProps) {
   return <Icon {...props} iconName={iconName} />
 }

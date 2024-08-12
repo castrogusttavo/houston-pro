@@ -26,12 +26,12 @@ Access over 27,000 icons within the library, ensuring you'll find the exact icon
 Using Houston React Pro is straightforward. Here’s a quick example of how an icon component can be utilized:
 
 ```jsx
-import {Icon} from "@houston/react";
+import { Figma } from '@houstonicons/react'
 
 const App = () => {
   return (
     <div>
-      <Icon
+      <Figma
         size={48}
         color="#FF0000"
         fillType="stroke"

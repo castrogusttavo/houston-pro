@@ -1,6 +1,6 @@
 import React from 'react'
 import { Icon, IconProps } from '../Icon'
 
-export function MagnetIcon({ iconName = "magnet", ...props }: IconProps) {
+export function MagnetIcon({ iconName = 'magnet', ...props }: IconProps) {
   return <Icon {...props} iconName={iconName} />
 }
