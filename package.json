@@ -1,9 +1,9 @@
 {
   "name": "@houstonicons/react",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "description": "Houston Pro React Component Library",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsup src/index.ts --format esm,cjs --dts --external react",
     "lint": "eslint 'src/**/*.{ts,tsx,js,jsx,json,css,scss,md}' --fix"
