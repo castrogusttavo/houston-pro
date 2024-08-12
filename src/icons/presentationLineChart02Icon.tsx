@@ -1,0 +1,6 @@
+import React from 'react'
+import { Icon, IconProps } from '../Icon'
+
+export function presentationLineChart02Icon({ iconName = "presentation-line-chart02", ...props }: IconProps) {
+  return <Icon {...props} iconName={iconName} />
+}

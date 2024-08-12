@@ -1,0 +1,6 @@
+import React from 'react'
+import { Icon, IconProps } from '../Icon'
+
+export function threeFinger01Icon({ iconName = "three-finger01", ...props }: IconProps) {
+  return <Icon {...props} iconName={iconName} />
+}

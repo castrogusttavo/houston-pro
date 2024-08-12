@@ -1,0 +1,6 @@
+import React from 'react'
+import { Icon, IconProps } from '../Icon'
+
+export function callOutgoing01Icon({ iconName = "call-outgoing01", ...props }: IconProps) {
+  return <Icon {...props} iconName={iconName} />
+}

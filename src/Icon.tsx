@@ -1,11 +1,9 @@
-import { IconName } from './iconsNames';
-
 export interface IconProps {
-  iconName: IconName;
-  iconSize?: number;
-  fillType?: 'stroke' | 'solid' | 'bulk' | 'duotone';
-  cornerStyle?: 'sharp' | 'rounded' | 'standard';
-  color?: string;
+  iconName: string
+  iconSize?: number
+  fillType?: 'stroke' | 'solid' | 'bulk' | 'duotone'
+  cornerStyle?: 'sharp' | 'rounded' | 'standard'
+  color?: string
 }
 
 export function Icon({
@@ -13,19 +11,23 @@ export function Icon({
   iconSize = 24,
   fillType = 'stroke',
   cornerStyle = 'standard',
-  color = 'currentColor'
+  color = 'currentColor',
 }: IconProps) {
-  const validatedIconName = String(iconName);
+  const validatedIconName = String(iconName)
 
   if (fillType === 'duotone') {
-    cornerStyle = 'rounded';
+    cornerStyle = 'rounded'
   }
 
-  if (cornerStyle === 'standard' && (fillType !== 'solid' && fillType !== 'stroke')) {
-    fillType = 'solid';
+  if (
+    cornerStyle === 'standard' &&
+    fillType !== 'solid' &&
+    fillType !== 'stroke'
+  ) {
+    fillType = 'solid'
   }
 
-  const iconUrl = `https://cdn.hugeicons.com/icons/${validatedIconName}-${fillType}-${cornerStyle}.svg`;
+  const iconUrl = `https://cdn.hugeicons.com/icons/${validatedIconName}-${fillType}-${cornerStyle}.svg`
 
   return (
     <img
@@ -35,5 +37,5 @@ export function Icon({
       height={iconSize}
       style={{ color }}
     />
-  );
+  )
 }
