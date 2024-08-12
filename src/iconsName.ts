@@ -1,4 +1,4 @@
-[
+export const iconsNames = [
   "abacus",
   "absolute",
   "acceleration",
@@ -3927,4 +3927,4 @@
   "zoom-in-area",
   "zoom-out-area",
   "zoom-square"
-]
+] as const
