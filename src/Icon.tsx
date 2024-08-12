@@ -1,5 +1,8 @@
-interface IconProps {
-  iconName: string;
+import React, { useState, useEffect } from 'react';
+import { IconName } from './iconsNames';
+
+export interface IconProps {
+  iconName: IconName;
   iconSize?: number;
   fillType?: 'stroke' | 'solid' | 'bulk' | 'duotone';
   cornerStyle?: 'sharp' | 'rounded' | 'standard';
@@ -11,8 +14,28 @@ export function Icon({
   iconSize = 24,
   fillType = 'stroke',
   cornerStyle = 'standard',
-  color = 'currentColor'
+  color = 'currentColor',
 }: IconProps) {
+  const [IconComponent, setIconComponent] = useState<React.FC<IconProps> | null>(null);
+
+  useEffect(() => {
+    const iconNameString = String(iconName);
+
+    import(`./icons/${iconNameString}Icon`)
+      .then(module => {
+        const component = module[`${iconNameString}Icon`] as React.FC<IconProps>;
+        setIconComponent(() => component);
+      })
+      .catch(() => {
+        console.warn(`Icon "${iconNameString}" not found.`);
+        setIconComponent(null);
+      });
+  }, [iconName]);
+
+  if (!IconComponent) {
+    return null;
+  }
+
   if (fillType === 'duotone') {
     cornerStyle = 'rounded';
   }
@@ -21,15 +44,13 @@ export function Icon({
     fillType = 'solid';
   }
 
-  const iconUrl = `https://cdn.hugeicons.com/icons/${iconName}-${fillType}-${cornerStyle}.svg`;
-
   return (
-    <img
-      src={iconUrl}
-      alt={`${iconName} icon`}
-      width={iconSize}
-      height={iconSize}
-      style={{ color }}
+    <IconComponent
+      iconName={iconName}
+      iconSize={iconSize}
+      fillType={fillType}
+      cornerStyle={cornerStyle}
+      color={color}
     />
   );
 }

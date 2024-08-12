@@ -34,7 +34,8 @@ const App = () => {
       <Icon
         size={48}
         color="#FF0000"
-        variant="stroke"
+        fillType="stroke"
+        cornerStyle="sharp"
       />
     </div>
   );

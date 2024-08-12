@@ -1,6 +1,11 @@
 {
-  "exclude": ["node_modules"],
-  "include": ["src"],
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "src",
+    "lib/generateIconFiles.js"
+  ],
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
@@ -9,7 +14,10 @@
       ]
     },
     "jsx": "react-jsx",
-    "lib": ["dom", "ES2015"],
+    "lib": [
+      "dom",
+      "ES2015"
+    ],
     "module": "ESNext",
     "target": "es6",
     "composite": false,
@@ -24,6 +32,7 @@
     "noUnusedParameters": false,
     "preserveWatchOutput": true,
     "skipLibCheck": true,
-    "strict": true
+    "strict": true,
+    "resolveJsonModule": true
   }
 }
