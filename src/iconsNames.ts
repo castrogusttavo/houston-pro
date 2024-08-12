@@ -1,3 +1,3 @@
-import iconNames from './iconsName.json';
+import iconNames from './iconsName.json'
 
-export type IconName = keyof typeof iconNames;
+export type IconName = keyof typeof iconNames
