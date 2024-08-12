@@ -1,6 +1,0 @@
-import React from 'react'
-import { Icon, IconProps } from '../Icon'
-
-export function sine02Icon({ iconName = "sine02", ...props }: IconProps) {
-  return <Icon {...props} iconName={iconName} />
-}

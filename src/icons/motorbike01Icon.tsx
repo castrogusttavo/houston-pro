@@ -1,6 +1,0 @@
-import React from 'react'
-import { Icon, IconProps } from '../Icon'
-
-export function motorbike01Icon({ iconName = "motorbike01", ...props }: IconProps) {
-  return <Icon {...props} iconName={iconName} />
-}
