@@ -1,9 +1,6 @@
 import React from 'react'
 import { Icon, IconProps } from '../Icon'
 
-export function CloudHailstoneIcon({
-  iconName = 'cloud-hailstone',
-  ...props
-}: IconProps) {
+export function CloudHailstoneIcon({ iconName = "cloud-hailstone", ...props }: IconProps) {
   return <Icon {...props} iconName={iconName} />
 }

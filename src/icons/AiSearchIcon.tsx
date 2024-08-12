@@ -1,6 +1,6 @@
 import React from 'react'
 import { Icon, IconProps } from '../Icon'
 
-export function AiSearchIcon({ iconName = 'ai-search', ...props }: IconProps) {
+export function AiSearchIcon({ iconName = "ai-search", ...props }: IconProps) {
   return <Icon {...props} iconName={iconName} />
 }

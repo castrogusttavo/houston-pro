@@ -1,9 +1,6 @@
 import React from 'react'
 import { Icon, IconProps } from '../Icon'
 
-export function NotificationCircleIcon({
-  iconName = 'notification-circle',
-  ...props
-}: IconProps) {
+export function NotificationCircleIcon({ iconName = "notification-circle", ...props }: IconProps) {
   return <Icon {...props} iconName={iconName} />
 }

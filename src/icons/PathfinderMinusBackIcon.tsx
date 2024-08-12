@@ -1,9 +1,6 @@
 import React from 'react'
 import { Icon, IconProps } from '../Icon'
 
-export function PathfinderMinusBackIcon({
-  iconName = 'pathfinder-minus-back',
-  ...props
-}: IconProps) {
+export function PathfinderMinusBackIcon({ iconName = "pathfinder-minus-back", ...props }: IconProps) {
   return <Icon {...props} iconName={iconName} />
 }

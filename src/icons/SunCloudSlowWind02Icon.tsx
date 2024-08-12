@@ -1,9 +1,6 @@
 import React from 'react'
 import { Icon, IconProps } from '../Icon'
 
-export function SunCloudSlowWind02Icon({
-  iconName = 'sun-cloud-slow-wind02',
-  ...props
-}: IconProps) {
+export function SunCloudSlowWind02Icon({ iconName = "sun-cloud-slow-wind-02", ...props }: IconProps) {
   return <Icon {...props} iconName={iconName} />
 }

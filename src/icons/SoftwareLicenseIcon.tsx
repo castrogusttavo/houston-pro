@@ -1,9 +1,6 @@
 import React from 'react'
 import { Icon, IconProps } from '../Icon'
 
-export function SoftwareLicenseIcon({
-  iconName = 'software-license',
-  ...props
-}: IconProps) {
+export function SoftwareLicenseIcon({ iconName = "software-license", ...props }: IconProps) {
   return <Icon {...props} iconName={iconName} />
 }

@@ -1,9 +1,6 @@
 import React from 'react'
 import { Icon, IconProps } from '../Icon'
 
-export function PackageReceiveIcon({
-  iconName = 'package-receive',
-  ...props
-}: IconProps) {
+export function PackageReceiveIcon({ iconName = "package-receive", ...props }: IconProps) {
   return <Icon {...props} iconName={iconName} />
 }

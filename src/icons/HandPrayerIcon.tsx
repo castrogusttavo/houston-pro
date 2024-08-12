@@ -1,9 +1,6 @@
 import React from 'react'
 import { Icon, IconProps } from '../Icon'
 
-export function HandPrayerIcon({
-  iconName = 'hand-prayer',
-  ...props
-}: IconProps) {
+export function HandPrayerIcon({ iconName = "hand-prayer", ...props }: IconProps) {
   return <Icon {...props} iconName={iconName} />
 }

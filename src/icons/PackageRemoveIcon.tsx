@@ -1,9 +1,6 @@
 import React from 'react'
 import { Icon, IconProps } from '../Icon'
 
-export function PackageRemoveIcon({
-  iconName = 'package-remove',
-  ...props
-}: IconProps) {
+export function PackageRemoveIcon({ iconName = "package-remove", ...props }: IconProps) {
   return <Icon {...props} iconName={iconName} />
 }

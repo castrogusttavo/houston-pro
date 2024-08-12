@@ -1,9 +1,6 @@
 import React from 'react'
 import { Icon, IconProps } from '../Icon'
 
-export function TwinTowerIcon({
-  iconName = 'twin-tower',
-  ...props
-}: IconProps) {
+export function TwinTowerIcon({ iconName = "twin-tower", ...props }: IconProps) {
   return <Icon {...props} iconName={iconName} />
 }

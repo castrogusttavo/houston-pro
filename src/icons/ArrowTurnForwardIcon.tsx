@@ -1,9 +1,6 @@
 import React from 'react'
 import { Icon, IconProps } from '../Icon'
 
-export function ArrowTurnForwardIcon({
-  iconName = 'arrow-turn-forward',
-  ...props
-}: IconProps) {
+export function ArrowTurnForwardIcon({ iconName = "arrow-turn-forward", ...props }: IconProps) {
   return <Icon {...props} iconName={iconName} />
 }

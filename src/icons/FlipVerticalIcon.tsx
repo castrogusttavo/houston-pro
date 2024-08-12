@@ -1,9 +1,6 @@
 import React from 'react'
 import { Icon, IconProps } from '../Icon'
 
-export function FlipVerticalIcon({
-  iconName = 'flip-vertical',
-  ...props
-}: IconProps) {
+export function FlipVerticalIcon({ iconName = "flip-vertical", ...props }: IconProps) {
   return <Icon {...props} iconName={iconName} />
 }

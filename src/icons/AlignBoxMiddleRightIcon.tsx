@@ -1,9 +1,6 @@
 import React from 'react'
 import { Icon, IconProps } from '../Icon'
 
-export function AlignBoxMiddleRightIcon({
-  iconName = 'align-box-middle-right',
-  ...props
-}: IconProps) {
+export function AlignBoxMiddleRightIcon({ iconName = "align-box-middle-right", ...props }: IconProps) {
   return <Icon {...props} iconName={iconName} />
 }

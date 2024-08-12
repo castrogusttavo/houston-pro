@@ -1,9 +1,6 @@
 import React from 'react'
 import { Icon, IconProps } from '../Icon'
 
-export function HierarchySquare06Icon({
-  iconName = 'hierarchy-square06',
-  ...props
-}: IconProps) {
+export function HierarchySquare06Icon({ iconName = "hierarchy-square-06", ...props }: IconProps) {
   return <Icon {...props} iconName={iconName} />
 }

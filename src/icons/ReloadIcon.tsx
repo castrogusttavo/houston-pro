@@ -1,6 +1,6 @@
 import React from 'react'
 import { Icon, IconProps } from '../Icon'
 
-export function ReloadIcon({ iconName = 'reload', ...props }: IconProps) {
+export function ReloadIcon({ iconName = "reload", ...props }: IconProps) {
   return <Icon {...props} iconName={iconName} />
 }
