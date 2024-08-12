@@ -7,7 +7,7 @@ interface IconProps {
     cornerStyle?: 'sharp' | 'rounded' | 'standard';
     color?: string;
 }
-declare function Icon({ iconName, iconSize, fillType, cornerStyle, color, }: IconProps): react_jsx_runtime.JSX.Element;
+declare function Icon({ iconName, iconSize, fillType, cornerStyle, color, }: IconProps): react_jsx_runtime.JSX.Element | null;
 
 declare function AbacusIcon({ iconName, ...props }: IconProps): react_jsx_runtime.JSX.Element;
 
