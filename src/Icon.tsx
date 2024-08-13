@@ -12,25 +12,13 @@ export function Icon({
   iconName = 'default-icon',
   iconSize = 24,
   fillType = 'stroke',
-  cornerStyle = 'standard',
-  color = 'currentColor',
+  cornerStyle = 'rounded',
+  color = '#000000',
 }: IconProps) {
   const [svgElement, setSvgElement] = useState<React.ReactNode | null>(null)
 
   useEffect(() => {
     const validatedIconName = String(iconName)
-
-    if (fillType === 'duotone') {
-      cornerStyle = 'rounded'
-    }
-
-    if (
-      cornerStyle === 'standard' &&
-      fillType !== 'solid' &&
-      fillType !== 'stroke'
-    ) {
-      fillType = 'solid'
-    }
 
     const iconUrl = `https://cdn.hugeicons.com/icons/${validatedIconName}-${fillType}-${cornerStyle}.svg`
 
@@ -41,12 +29,22 @@ export function Icon({
         const svgDoc = parser.parseFromString(svgText, 'image/svg+xml')
         const svgNode = svgDoc.documentElement
 
-        // Adicionando propriedades dinamicamente
         svgNode.setAttribute('width', iconSize.toString())
         svgNode.setAttribute('height', iconSize.toString())
-        svgNode.setAttribute('fill', color)
+        svgNode.setAttribute('color', color)
 
-        // Converter o SVG em um elemento React
+        svgNode.querySelectorAll('*').forEach((element) => {
+          const hasFill = element.hasAttribute('fill')
+          const hasStroke = element.hasAttribute('stroke')
+
+          if (hasFill) {
+            element.setAttribute('fill', 'currentColor')
+          }
+          if (hasStroke) {
+            element.setAttribute('stroke', 'currentColor')
+          }
+        })
+
         setSvgElement(
           React.createElement('svg', {
             dangerouslySetInnerHTML: { __html: svgNode.innerHTML },

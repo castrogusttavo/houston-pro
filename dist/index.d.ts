@@ -1,3 +1,4 @@
+import React from 'react';
 import * as react_jsx_runtime from 'react/jsx-runtime';
 
 interface IconProps {
@@ -7,7 +8,7 @@ interface IconProps {
     cornerStyle?: 'sharp' | 'rounded' | 'standard';
     color?: string;
 }
-declare function Icon({ iconName, iconSize, fillType, cornerStyle, color, }: IconProps): react_jsx_runtime.JSX.Element | null;
+declare function Icon({ iconName, iconSize, fillType, cornerStyle, color, }: IconProps): React.ReactNode;
 
 declare function AbacusIcon({ iconName, ...props }: IconProps): react_jsx_runtime.JSX.Element;
 
