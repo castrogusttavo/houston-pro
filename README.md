@@ -1,6 +1,4 @@
-![31c9262e-aeea-4403-9086-3c8b88885cab](https://github.com/hugeicons/hugeicons-react/assets/130147052/ff91f2f0-095a-4c6d-8942-3af4759f9021)
-
-# react Icons - Houston Pro
+# React Icons - Houston Pro
 
 Welcome to the professional edition of Houston for React — an extensive library of meticulously crafted icons designed to elevate the visual appeal of your web and mobile applications. With Houston React Pro , you gain access to a vast selection of icons tailored to suit every need, allowing for highly customizable and dynamic user interfaces.
 
