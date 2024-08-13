@@ -34,8 +34,8 @@ const App = () => {
       <Figma
         size={48}
         color="#FF0000"
-        fillType="stroke"
-        cornerStyle="sharp"
+        fillType="solid"
+        cornerStyle="rounded"
       />
     </div>
   );
