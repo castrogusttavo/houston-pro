@@ -119,11 +119,8 @@ A: Yes, we have a live example available at [Houston React Example](#live-exampl
 **Q: Are the react icons from Houston React Icons free for commercial use?**
 A: Houston React Pro is licensed for commercial use, adhering to the [CC0-1.0](#license). Please review the license details for more information.
 
----
 
 Enjoy the seamless integration of premium icons with Houston React Pro and take your application to the next level!
-
----
 
 
 ## License
