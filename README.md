@@ -1,10 +1,15 @@
-# React Icons - Houston Pro
+![logo](./public/logo.svg)
+
+# Houston Pro - React Icons
 
 Welcome to the professional edition of Houston for React — an extensive library of meticulously crafted icons designed to elevate the visual appeal of your web and mobile applications. With Houston React Pro , you gain access to a vast selection of icons tailored to suit every need, allowing for highly customizable and dynamic user interfaces.
 
+Thousands of designers, developers, and content creators use Houston Pro for unlimited personal and commercial projects, making it one of the most versatile and user-friendly icon libraries available.
+
 Discover more at our website: [houston.com](https://houston.com/)
 
-![a40aa766-1b04-4a2a-a2e6-0ec3c492b96a](https://github.com/hugeicons/hugeicons-react/assets/130147052/f82c0e0e-60ae-4617-802f-812cdc7a58da)
+![image](https://github.com/hugeicons/hugeicons-react/assets/130147052/fbbdccfc-074a-45de-8aaf-218db2fcda28)
+
 
 ## Table of Contents
 - [Features](#features)
@@ -14,6 +19,10 @@ Discover more at our website: [houston.com](https://houston.com/)
 - [Contributing](#contributing)
 - [FAQ](#faq)
 - [License](#license)
+
+## General Usage
+
+Icons can be downloaded from the [Houston website](https://houston.com) and used in your projects. The icons are available in SVG format and can be easily integrated into your applications.
 
 ## Features
 
@@ -34,78 +43,65 @@ Access over 27,000 icons within the library, ensuring you'll find the exact icon
 
 ## Installation
 
-To install Houston React Pro, simply run the following command in your project directory:
+To start using HugeIcons-React in your project, install the package via npm:
 
-```sh
-npm install @houstonicons/react
+```bash
+npm install hugeicons-react
 ```
 
-Or if you prefer using Yarn:
+Or via yarn:
 
-```sh
-yarn add @houstonicons/react
+```bash
+yarn add hugeicons-react
 ```
 
 ## Usage Examples
 
-Using Houston React Pro is straightforward. Here’s a quick example of how an icon component can be utilized:
+Import the icons you need from the library and integrate them into your React components. Here's how you can customize the icons to fit your needs:
 
-### Control Icon Sise
+### Control Icon Size
+Adjust the size of your icons by passing a `size` prop:
 
 ```jsx
-import { Home01Icon } from '@houstonicons/react'
+import { Home01Icon } from "hugeicons-react";
 
-const App = () => {
-  return (
-    <div>
-      <Home01Icon
-        size={48} // Custom size
-      />
-    </div>
-  );
-};
+<Home01Icon size={32} /> // Custom size
 ```
 
 ### Customize Icon Color
+Change the color of your icons by passing a `color` prop:
 
 ```jsx
-import { Figma } from '@houstonicons/react'
+import { MarketingIcon } from "hugeicons-react";
 
-const App = () => {
-  return (
-    <div>
-      <Figma
-        color="#FF0000" // Red color
-      />
-    </div>
-  );
-};
+<MarketingIcon color="#00FF00" /> // Green color
 ```
 
-### Customize Icon Type and Style
+### Adjust Icon Corners
+Easily modify the corner style of your icons by using the cornerStyle prop:
 
 ```jsx
-import { MarketingIcon } from '@houstonicons/react'
+import { ListSettingIcon } from "hugeicons-react";
 
-const App = () => {
-  return (
-    <div>
-      <MarketingIcon
-        fillType="solid" // Solid fill
-        cornerStyle="rounded" // Rounded corners
-      />
-    </div>
-  );
-};
+<ListSettingIcon cornerStyle="rounded" /> // Rounded corners
 ```
 
-## Example
+### Control Icon Fill Type
+Set the fill style of your icons using the fillType prop:
 
-Check out our example project to see Houston-React in action and explore more customization options.
+```jsx
+import { AddSquareIcons } from "hugeicons-react";
+
+<AddSquareIcons fillType="solid" /> // Solid fill
+```
 
 ## Live Example
 
-Explore a live demonstration of Houston React in action at [Houston React Example](https://houston-react.vercel.app/). This example showcases the versatility and ease of customizing our icons to fit your design needs, providing a hands-on experience with the icon collection.
+Explore a live demonstration of HugeIcons React in action at [Houston Pro Example](https://houston.com/docs). This example showcases the versatility and ease of customizing our icons to fit your design needs, providing a hands-on experience with the icon collection.
+
+## Example
+
+Check out our example project to see HoustonIcons-Pro in action and explore more customization options.
 
 ## FAQ
 
@@ -127,3 +123,12 @@ A: Houston React Pro is licensed for commercial use, adhering to the [CC0-1.0](#
 ---
 
 Enjoy the seamless integration of premium icons with Houston React Pro and take your application to the next level!
+
+---
+
+
+## License
+
+Houston React is licensed under the CC0 1.0 Universal (CC0 1.0) Public Domain Dedication. This means you can use, modify, distribute, and even use the icons for private or commercial purposes, without any restrictions. No attribution is required, but it's appreciated.
+
+For more details, see the [LICENSE.md](./LICENSE.md) file in the repository.
