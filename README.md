@@ -1,4 +1,3 @@
-![logo](./public/logo.svg)
 
 # Houston Pro - React Icons
 
