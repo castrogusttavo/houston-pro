@@ -1,6 +1,9 @@
 import React from 'react'
 import { Icon, IconProps } from '../Icon'
 
-export function AlignSelectionIcon({ iconName = "align-selection", ...props }: IconProps) {
+export function AlignSelectionIcon({
+  iconName = 'align-selection',
+  ...props
+}: IconProps) {
   return <Icon {...props} iconName={iconName} />
 }

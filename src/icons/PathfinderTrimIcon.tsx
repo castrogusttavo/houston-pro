@@ -1,6 +1,9 @@
 import React from 'react'
 import { Icon, IconProps } from '../Icon'
 
-export function PathfinderTrimIcon({ iconName = "pathfinder-trim", ...props }: IconProps) {
+export function PathfinderTrimIcon({
+  iconName = 'pathfinder-trim',
+  ...props
+}: IconProps) {
   return <Icon {...props} iconName={iconName} />
 }

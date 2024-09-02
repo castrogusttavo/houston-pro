@@ -1,6 +1,9 @@
 import React from 'react'
 import { Icon, IconProps } from '../Icon'
 
-export function WebValidationIcon({ iconName = "web-validation", ...props }: IconProps) {
+export function WebValidationIcon({
+  iconName = 'web-validation',
+  ...props
+}: IconProps) {
   return <Icon {...props} iconName={iconName} />
 }

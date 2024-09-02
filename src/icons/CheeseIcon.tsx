@@ -1,6 +1,6 @@
 import React from 'react'
 import { Icon, IconProps } from '../Icon'
 
-export function CheeseIcon({ iconName = "cheese", ...props }: IconProps) {
+export function CheeseIcon({ iconName = 'cheese', ...props }: IconProps) {
   return <Icon {...props} iconName={iconName} />
 }

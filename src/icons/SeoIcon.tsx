@@ -1,6 +1,6 @@
 import React from 'react'
 import { Icon, IconProps } from '../Icon'
 
-export function SeoIcon({ iconName = "seo", ...props }: IconProps) {
+export function SeoIcon({ iconName = 'seo', ...props }: IconProps) {
   return <Icon {...props} iconName={iconName} />
 }

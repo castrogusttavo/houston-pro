@@ -1,6 +1,9 @@
 import React from 'react'
 import { Icon, IconProps } from '../Icon'
 
-export function RightToLeftListDashIcon({ iconName = "right-to-left-list-dash", ...props }: IconProps) {
+export function RightToLeftListDashIcon({
+  iconName = 'right-to-left-list-dash',
+  ...props
+}: IconProps) {
   return <Icon {...props} iconName={iconName} />
 }

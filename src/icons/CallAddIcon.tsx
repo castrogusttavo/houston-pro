@@ -1,6 +1,6 @@
 import React from 'react'
 import { Icon, IconProps } from '../Icon'
 
-export function CallAddIcon({ iconName = "call-add", ...props }: IconProps) {
+export function CallAddIcon({ iconName = 'call-add', ...props }: IconProps) {
   return <Icon {...props} iconName={iconName} />
 }
