@@ -1,4 +1,4 @@
-![image](./public/logoHorizontalBig.svg)
+![image](./public/logoHorizontalNPM.svg)
 
 ---
 
@@ -46,13 +46,13 @@ Access over 27,000 icons within the library, ensuring you'll find the exact icon
 To start using HoustonIcons-React in your project, install the package via npm:
 
 ```bash
-npm install @houstonicons/react
+npm install @houstonicons/pro
 ```
 
 Or via yarn:
 
 ```bash
-yarn add @houstonicons/react
+yarn add @houstonicons/pro
 ```
 
 ## Usage Examples
@@ -63,7 +63,7 @@ Import the icons you need from the library and integrate them into your React co
 Adjust the size of your icons by passing a `size` prop:
 
 ```jsx
-import { Home01Icon } from '@houstonicons/react'
+import { Home01Icon } from '@houstonicons/pro'
 
 <Home01Icon size={32} /> // Custom size
 ```
@@ -72,7 +72,7 @@ import { Home01Icon } from '@houstonicons/react'
 Change the color of your icons by passing a `color` prop:
 
 ```jsx
-import { MarketingIcon } from '@houstonicons/react'
+import { MarketingIcon } from '@houstonicons/pro'
 
 <MarketingIcon color="#00FF00" /> // Green color
 ```
@@ -81,7 +81,7 @@ import { MarketingIcon } from '@houstonicons/react'
 Easily modify the corner style of your icons by using the cornerStyle prop:
 
 ```jsx
-import { ListSettingIcon } from '@houstonicons/react'
+import { ListSettingIcon } from '@houstonicons/pro'
 
 <ListSettingIcon cornerStyle="rounded" /> // Rounded corners
 ```
@@ -90,7 +90,7 @@ import { ListSettingIcon } from '@houstonicons/react'
 Set the fill style of your icons using the fillType prop:
 
 ```jsx
-import { AddSquareIcons } from '@houstonicons/react'
+import { AddSquareIcons } from '@houstonicons/pro'
 
 <AddSquareIcons fillType="solid" /> // Solid fill
 ```
