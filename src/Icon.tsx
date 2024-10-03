@@ -4,18 +4,20 @@ import React, { useEffect, useState } from 'react'
 
 export interface IconProps {
   iconName?: string
-  iconSize?: number
+  size?: number
   fillType?: 'stroke' | 'solid' | 'bulk' | 'duotone' | 'twotone'
   cornerStyle?: 'sharp' | 'rounded' | 'standard'
   color?: string
+  strokeWidth?: number
 }
 
 export function Icon({
   iconName = 'default-icon',
-  iconSize = 24,
+  size = 24,
   fillType = 'stroke',
   cornerStyle = 'rounded',
   color = '#000000',
+  strokeWidth = 1.5,
 }: IconProps) {
   const [svgElement, setSvgElement] = useState<React.ReactNode | null>(null)
 
@@ -31,8 +33,8 @@ export function Icon({
         const svgDoc = parser.parseFromString(svgText, 'image/svg+xml')
         const svgNode = svgDoc.documentElement
 
-        svgNode.setAttribute('width', iconSize.toString())
-        svgNode.setAttribute('height', iconSize.toString())
+        svgNode.setAttribute('width', size.toString())
+        svgNode.setAttribute('height', size.toString())
         svgNode.setAttribute('color', color)
 
         svgNode.querySelectorAll('*').forEach((element) => {
@@ -44,6 +46,7 @@ export function Icon({
           }
           if (hasStroke) {
             element.setAttribute('stroke', 'currentColor')
+            element.setAttribute('stroke-width', strokeWidth.toString())
           }
         })
 
@@ -64,7 +67,7 @@ export function Icon({
         console.error(`Error loading SVG icon: ${error}`)
         setSvgElement(null)
       })
-  }, [iconName, iconSize, fillType, cornerStyle, color])
+  }, [iconName, size, fillType, cornerStyle, color, strokeWidth])
 
   return svgElement
 }

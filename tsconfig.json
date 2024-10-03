@@ -18,7 +18,7 @@
       "dom",
       "ES2015"
     ],
-    "module": "ESNext",
+    "module": "ES6",
     "target": "es6",
     "composite": false,
     "declaration": true,

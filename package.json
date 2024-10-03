@@ -1,6 +1,6 @@
 {
   "name": "@houstonicons/pro",
-  "version": "3.7.1",
+  "version": "4.3.0",
   "description": "Houston Icons Pro React Component Library",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -37,12 +37,18 @@
   ],
   "author": "castrogusttavo",
   "dependencies": {
+    "@houstonicons/pro": "^4.0.1",
+    "@houstonicons/react": "^4.0.0",
+    "@houstonicons/vue": "^3.5.0",
+    "@types/inquirer": "^9.0.7",
     "fast-glob": "^3.3.2",
     "fs": "^0.0.1-security",
     "glob": "^11.0.0",
+    "inquirer": "^11.1.0",
     "jsonfile": "^6.1.0",
     "path": "^0.12.7",
-    "react": "^18.3.1"
+    "react": "^18.3.1",
+    "ts-node": "^10.9.2"
   },
   "devDependencies": {
     "@hello.softis/eslint-config": "^1.0.1",
@@ -59,5 +65,6 @@
     "access": "public"
   },
   "packageManager": "npm@20.0.0",
+  "type": "module",
   "license": "CC0-1.0"
 }
