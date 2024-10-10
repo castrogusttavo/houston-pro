@@ -5,8 +5,8 @@ import React, { useEffect, useState } from 'react'
 export interface IconProps {
   iconName?: string
   size?: number
-  fillType?: 'stroke' | 'solid' | 'bulk' | 'duotone' | 'twotone'
-  cornerStyle?: 'sharp' | 'rounded' | 'standard'
+  variant?: 'stroke' | 'solid' | 'bulk' | 'duotone' | 'twotone'
+  type?: 'sharp' | 'rounded' | 'standard'
   color?: string
   strokeWidth?: number
 }
@@ -14,8 +14,8 @@ export interface IconProps {
 export function Icon({
   iconName = 'default-icon',
   size = 24,
-  fillType = 'stroke',
-  cornerStyle = 'rounded',
+  variant = 'stroke',
+  type = 'rounded',
   color = '#000000',
   strokeWidth = 1.5,
 }: IconProps) {
@@ -24,7 +24,7 @@ export function Icon({
   useEffect(() => {
     const validatedIconName = String(iconName)
 
-    const iconUrl = `https://cdn.hugeicons.com/icons/${validatedIconName}-${fillType}-${cornerStyle}.svg`
+    const iconUrl = `https://cdn.hugeicons.com/icons/${validatedIconName}-${variant}-${type}.svg`
 
     fetch(iconUrl)
       .then((response) => response.text())
@@ -67,7 +67,7 @@ export function Icon({
         console.error(`Error loading SVG icon: ${error}`)
         setSvgElement(null)
       })
-  }, [iconName, size, fillType, cornerStyle, color, strokeWidth])
+  }, [iconName, size, variant, type, color, strokeWidth])
 
   return svgElement
 }
