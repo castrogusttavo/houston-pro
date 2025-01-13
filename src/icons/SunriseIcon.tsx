@@ -1,6 +1,9 @@
-import React from 'react'
-import { Icon, IconProps } from '../Icon'
+import React from 'react';
+import { Icon, IconProps } from '../Icon';
 
-export function SunriseIcon({ iconName = 'sunrise', ...props }: IconProps) {
-  return <Icon {...props} iconName={iconName} />
+export function SunriseIcon({
+  iconName = 'sunrise',
+  ...props
+}: IconProps) {
+  return <Icon {...props} iconName={iconName} />;
 }

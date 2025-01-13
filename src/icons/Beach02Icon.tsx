@@ -1,6 +1,9 @@
-import React from 'react'
-import { Icon, IconProps } from '../Icon'
+import React from 'react';
+import { Icon, IconProps } from '../Icon';
 
-export function Beach02Icon({ iconName = 'beach-02', ...props }: IconProps) {
-  return <Icon {...props} iconName={iconName} />
+export function Beach02Icon({
+  iconName = 'beach-02',
+  ...props
+}: IconProps) {
+  return <Icon {...props} iconName={iconName} />;
 }

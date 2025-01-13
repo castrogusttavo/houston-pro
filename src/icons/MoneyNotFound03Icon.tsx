@@ -1,9 +1,9 @@
-import React from 'react'
-import { Icon, IconProps } from '../Icon'
+import React from 'react';
+import { Icon, IconProps } from '../Icon';
 
 export function MoneyNotFound03Icon({
   iconName = 'money-not-found-03',
   ...props
 }: IconProps) {
-  return <Icon {...props} iconName={iconName} />
+  return <Icon {...props} iconName={iconName} />;
 }

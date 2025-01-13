@@ -1,6 +1,9 @@
-import React from 'react'
-import { Icon, IconProps } from '../Icon'
+import React from 'react';
+import { Icon, IconProps } from '../Icon';
 
-export function CarrotIcon({ iconName = 'carrot', ...props }: IconProps) {
-  return <Icon {...props} iconName={iconName} />
+export function CarrotIcon({
+  iconName = 'carrot',
+  ...props
+}: IconProps) {
+  return <Icon {...props} iconName={iconName} />;
 }

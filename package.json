@@ -1,6 +1,6 @@
 {
   "name": "@houstonicons/pro",
-  "version": "4.6.0",
+  "version": "0.1.0",
   "description": "Houston Icons Pro React Component Library",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -9,19 +9,19 @@
     "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
     "lint": "eslint src/**/*.ts* --fix"
   },
-  "exports": {
-    ".": {
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.js",
-      "types": "./dist/index.d.ts"
-    }
-  },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/castrogusttavo/houston-react.git"
   },
   "bugs": {
     "url": "https://github.com/castrogusttavo/houston-react.git/issues"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
   },
   "keywords": [
     "icons",
@@ -38,10 +38,8 @@
   "author": "castrogusttavo",
   "dependencies": {
     "fast-glob": "^3.3.2",
-    "fs": "^0.0.1-security",
     "glob": "^11.0.0",
     "jsonfile": "^6.1.0",
-    "path": "^0.12.7",
     "react": "^18.3.1"
   },
   "devDependencies": {

@@ -39,7 +39,7 @@ Seven distinct variants ensure that you can select the perfect style to match yo
 Customize icon colors with ease, giving you the ability to maintain consistency with your brand's color palette.
 
 ### Expansive Library
-Access over 27,000 icons within the library, ensuring you'll find the exact icon for every context.
+Access over 50,000 icons within the library, ensuring you'll find the exact icon for every context.
 
 ## Installation
 

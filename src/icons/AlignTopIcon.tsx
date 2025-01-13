@@ -1,6 +1,9 @@
-import React from 'react'
-import { Icon, IconProps } from '../Icon'
+import React from 'react';
+import { Icon, IconProps } from '../Icon';
 
-export function AlignTopIcon({ iconName = 'align-top', ...props }: IconProps) {
-  return <Icon {...props} iconName={iconName} />
+export function AlignTopIcon({
+  iconName = 'align-top',
+  ...props
+}: IconProps) {
+  return <Icon {...props} iconName={iconName} />;
 }

@@ -1,6 +1,9 @@
-import React from 'react'
-import { Icon, IconProps } from '../Icon'
+import React from 'react';
+import { Icon, IconProps } from '../Icon';
 
-export function ApricotIcon({ iconName = 'apricot', ...props }: IconProps) {
-  return <Icon {...props} iconName={iconName} />
+export function ApricotIcon({
+  iconName = 'apricot',
+  ...props
+}: IconProps) {
+  return <Icon {...props} iconName={iconName} />;
 }
